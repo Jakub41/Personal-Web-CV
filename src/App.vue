@@ -4,7 +4,7 @@
       <a class="navbar-brand js-scroll-trigger" href="#about">
         <span class="d-block d-lg-none">Start Bootstrap</span>
         <span class="d-none d-lg-block">
-          <img src="https://via.placeholder.com/150"> 
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="static/profile.jpg" alt="">
         </span>
       </a>
       <button
@@ -268,15 +268,15 @@ export default {
       email: "lemiszewski@gmx.com",
       aboutMe:"Senior Developer",
       position: "Senior Developer",
-      
+
       experience: [
         {
-          position: "Senior Web Developer",
-          company: "Intelitec Solutions",
+          position: "Senior Ruby Engineer",
+          company: "Cargoflux",
           description:
-            "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.",
-          startDate: "March 2013",
-          endDate: "Present"
+            "",
+          startDate: "January 2019",
+          endDate: "April 2019"
         },
         {
           position: "Web Developer",
@@ -433,7 +433,7 @@ h2 {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border: 0.1rem solid rgba(0,0,0);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -509,18 +509,18 @@ a:active {
 #aboutMe {
   /* WebKit (Safari/Chrome) Only */
   -webkit-text-stroke: 1px black;
-  
+
   /* If we weren't using text-shadow, we'd set a fallback color
      and use this to set color instead
     -webkit-text-fill-color: white; */
-  
+
   color: white;
-  
+
   text-shadow:
     3px 3px 0 #000,
     /* Simulated effect for Firefox and Opera
        and nice enhancement for WebKit */
-   -1px -1px 0 #000,  
+   -1px -1px 0 #000,
     1px -1px 0 #000,
    -1px  1px 0 #000,
     1px  1px 0 #000;
@@ -535,18 +535,18 @@ a:active {
 .subheading {
   /* WebKit (Safari/Chrome) Only */
   -webkit-text-stroke: 1px black;
-  
+
   /* If we weren't using text-shadow, we'd set a fallback color
      and use this to set color instead
     -webkit-text-fill-color: white; */
-  
+
   color: white;
-  
+
   text-shadow:
     3px 3px 0 #000,
     /* Simulated effect for Firefox and Opera
        and nice enhancement for WebKit */
-   -1px -1px 0 #000,  
+   -1px -1px 0 #000,
     1px -1px 0 #000,
    -1px  1px 0 #000,
     1px  1px 0 #000;
@@ -576,5 +576,10 @@ a:active {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.text-md-right {
+  position: relative;
+  right: 200px;
 }
 </style>
