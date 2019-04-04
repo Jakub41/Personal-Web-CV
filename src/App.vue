@@ -97,47 +97,70 @@
                 <p>{{ job.description }}</p>
               </div>
               <div class="resume-date text-md-right">
-                <span class="text-primary">{{ job.startDate }} - {{ job.endDate }}</span>
+                <span class="text-primary stroke">{{ job.startDate }} - {{ job.endDate }}</span>
               </div>
             </div>
           </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column relative" id="education">
+        <div class="glass"></div>
+        <div class="my-auto absolute">
           <h2 class="mb-5">Education</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">University of Colorado Boulder</h3>
-              <div class="subheading mb-3">Bachelor of Science</div>
+              <h3 class="mb-0">KEA Denmark</h3>
+              <div class="subheading mb-3">Bachelor in Web Development</div>
               <div>Computer Science - Web Development Track</div>
-              <p>GPA: 3.23</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">August 2006 - May 2010</span>
+              <span class="text-primary stroke">July 2016</span>
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">James Buchanan High School</h3>
-              <div class="subheading mb-3">Technology Magnet Program</div>
-              <p>GPA: 3.56</p>
+              <h3 class="mb-0">University of Pisa Italy</h3>
+              <div class="subheading mb-3">Bachalor in Computer Science</div>
+              <div>Computer Science - Web Security and Server Administration Track</div>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">August 2002 - May 2006</span>
+              <span class="text-primary stroke">June 2009</span>
+            </div>
+          </div>
+          <br>
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Maritime High School Viareggio Italy</h3>
+              <div class="subheading mb-3">Junior Deck Officer</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary stroke">June 2003</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column relative" id="skills">
+          <div class="glass"></div>
+        <div class="my-auto absolute">
           <h2 class="mb-5">Skills</h2>
 
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
           <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <i class="devicons devicons-ruby"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-ruby_on_rails"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-php"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-database"></i>
+            </li>
             <li class="list-inline-item">
               <i class="devicons devicons-html5"></i>
             </li>
@@ -160,17 +183,36 @@
               <i class="devicons devicons-bootstrap"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-ruby"></i>
+              <i class="devicons devicons-git"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-grunt"></i>
+              <i class="devicons devicons-github_badge"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-gulp"></i>
+              <i class="devicons devicons-trello"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-npm"></i>
+              <i class="devicons devicons-jira"></i>
             </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-stackoverflow"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-terminal"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-code"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-aws"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-docker"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-heroku"></i>
+            </li>
+
           </ul>
 
           <div class="subheading mb-3">Workflow</div>
@@ -274,33 +316,43 @@ export default {
           position: "Senior Ruby Engineer",
           company: "Cargoflux",
           description:
-            "",
+            "Lead selection of appropriate technology for each component with the focus on security and scalability." +
+            "Work closely with the client to develop a product solution that would suit their needs and be easily translated into a web application." +
+            "Worked closely with the product manager throughout the development cycle ensuring the proposed solution met the requirements." +
+            "Utilize appropriate process management tools including Jira, GitHub to support new feature implementation and maintenance on a highly compressed schedule." +
+            "Successfully increased the stability of code base through effective adoption of iterative and agile methodologies" +
+            "Served as a crucial team member to build solid scalable API integrations." +
+            "Deploy new version releases to multiple environments including Heroku while ensuring adherence to established SLAs.",
           startDate: "January 2019",
           endDate: "April 2019"
         },
         {
-          position: "Web Developer",
-          company: "Intelitec Solutions",
+          position: "Lead Ruby Developer",
+          company: "S-CUBED / A3Informatics",
           description:
-            "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.",
-          startDate: "December 2011",
-          endDate: "March 2013"
+            "Complete Rails stack development. " +
+            "Developing and Implementing solutions for the Glandon project. " +
+            "Write functional, unit, and integration tests for application quality assurance. " +
+            "Use version control tool Git and code storage tool Github for added application functionality. " +
+            "Complete database migrations with Ruby on Rails and ActiveRecord. " +
+            "PostgreSQL Database Infrastructure. " +
+            "Complete database migrations with Neo4j and ActiveNode " +
+            "Build custom Gems for application specific features " +
+            "Managed projects with agile methodologies in JIRA " +
+            "Designed user-interface pages using Twitter Bootstrap, custom CSS, JavaScript/JQuery, and JQuery UI. " +
+            "DevOps and IT administration. " +
+            "Linux/Ubuntu server administration " +
+            "Build Java, Solr and Ruby tools for searching optimization for PDF documents",
+          startDate: "September 2017",
+          endDate: "December 2018"
         },
         {
-          position: "Junior Web Designer",
-          company: "Shout! Media Productions",
+          position: "Freelance Developer",
+          company: "",
           description:
-            "Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.",
-          startDate: "July 2010",
-          endDate: "December 2011"
-        },
-        {
-          position: "Web Design Intern",
-          company: "Shout! Media Productions",
-          description:
-            "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
-          startDate: "September 2008",
-          endDate: "June 2010"
+            "Back end and front end development.",
+          startDate: "2014",
+          endDate: "Present"
         }
       ]
     };
@@ -530,6 +582,25 @@ a:active {
 
 #hi {
   font-size: 50px;
+}
+
+.stroke {
+  /* WebKit (Safari/Chrome) Only */
+  -webkit-text-stroke: 1px black;
+
+  /* If we weren't using text-shadow, we'd set a fallback color
+     and use this to set color instead
+    -webkit-text-fill-color: white; */
+  color: white!important;
+  font-weight: bold;
+  text-shadow:
+    1px 1px 0 #000,
+    /* Simulated effect for Firefox and Opera
+       and nice enhancement for WebKit */
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
 }
 
 .subheading {
